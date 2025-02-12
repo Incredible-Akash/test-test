@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Series</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- PDF Upload Section -->
+    <div id="upload-container">
+        <h1>Upload PDF for Test</h1>
+        <input type="file" id="pdf-upload" accept="application/pdf" />
+    </div>
+
+    <!-- Test Section -->
+    <div id="test-container" class="hidden">
+        <div id="question-container">
+            <h2 id="question-title">Question 1</h2>
+            <p id="question"></p>
+            <form id="answers-form"></form>
+        </div>
+        <button id="next-btn">Next Question</button>
+        <button id="submit-btn">Submit Answer</button>
+    </div>
+
+    <!-- Results Section -->
+    <div id="results-container" class="hidden">
+        <h2>Results</h2>
+        <p id="score">Your score is: 0</p>
+        <button id="restart-btn">Restart Test</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.15.349/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
